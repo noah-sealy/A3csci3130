@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1096120278948",
+    "firebase_url": "https://softenga3firebase.firebaseio.com",
+    "project_id": "softenga3firebase",
+    "storage_bucket": "softenga3firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096120278948:android:6409f2945731fca6",
+        "android_client_info": {
+          "package_name": "com.acme.a3csci3130"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096120278948-jtl6bm89cnbh182bb6gvbfc8l0g780p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBKWaPqU4ISFqUc4R4k6oewpRVzQwiGEk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
