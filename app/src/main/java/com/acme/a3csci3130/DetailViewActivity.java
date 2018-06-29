@@ -18,22 +18,23 @@ public class DetailViewActivity extends Activity {
 
         busNumField = (EditText) findViewById(R.id.businessNumber);
         nameField = (EditText) findViewById(R.id.businessName);
-        //primBusField = (EditText) findViewById(R.id.primaryBusiness);
-        //addField = (EditText) findViewById(R.id.address);
-        //provField = (EditText) findViewById(R.id.province);
+        primBusField = (EditText) findViewById(R.id.primaryBusiness);
+        addField = (EditText) findViewById(R.id.address);
+        provField = (EditText) findViewById(R.id.province);
 
         if(receivedBusinessInfo != null){
             busNumField.setText(receivedBusinessInfo.businessNumber);
             nameField.setText(receivedBusinessInfo.name);
-            //primBusField.setText(receivedBusinessInfo.primaryBusiness);
-            //addField.setText(receivedBusinessInfo.address);
-            //provField.setText(receivedBusinessInfo.province);
+            primBusField.setText(receivedBusinessInfo.primaryBusiness);
+            addField.setText(receivedBusinessInfo.address);
+            provField.setText(receivedBusinessInfo.province);
 
         }
     }
 
     public void updateContact(View v){
         //TODO: Update contact funcionality
+
 
 
     }
