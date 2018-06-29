@@ -37,6 +37,7 @@ public class DetailViewActivity extends Activity {
 
 
 
+
     }
 
     public void eraseContact(View v)
