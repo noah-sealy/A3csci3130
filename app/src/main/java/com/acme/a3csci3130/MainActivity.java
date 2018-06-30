@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 
         //Set-up Firebase
         appData.firebaseDBInstance = FirebaseDatabase.getInstance();
-        appData.firebaseReference = appData.firebaseDBInstance.getReference("contacts");
+        appData.firebaseReference = appData.firebaseDBInstance.getReference("business");//changes from contacts
 
         //Get the reference to the UI contents
         businessListView = (ListView) findViewById(R.id.listView);
@@ -37,8 +37,8 @@ public class MainActivity extends Activity {
                 android.R.layout.simple_list_item_1, appData.firebaseReference) {
             @Override
             protected void populateView(View v, Business model, int position) {
-                TextView contactName = (TextView)v.findViewById(android.R.id.text1);
-                contactName.setText(model.name);
+                TextView businessName = (TextView)v.findViewById(android.R.id.text1);
+                businessName.setText(model.name);
             }
         };
         businessListView.setAdapter(firebaseAdapter);
@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
         });
     }
 
-    public void createContactButton(View v)
+    public void createBusinessButton(View v)
     {
         Intent intent=new Intent(this, CreateBusinessAcitivity.class);
         startActivity(intent);
