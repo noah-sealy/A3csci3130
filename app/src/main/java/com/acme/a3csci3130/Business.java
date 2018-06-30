@@ -10,6 +10,7 @@ import java.util.Map;
 /**
  * Class that defines how the data will be stored in the
  * Firebase databse. This is converted to a JSON format
+ * This code was originally provided by the professor by has been edited by Noah Sealy, B00726289 in order to fit the code in the context of a business creation
  */
 
 public class Business implements Serializable {

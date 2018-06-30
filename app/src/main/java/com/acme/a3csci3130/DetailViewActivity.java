@@ -5,14 +5,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-
+/**
+ * This class contains code for creating, updating, and deleting business data in the app
+ * This code was originally provided by the professor by has been edited by Noah Sealy, B00726289 in order to fit the code in the context of a business creation
+ */
 public class DetailViewActivity extends Activity {
 
     private EditText busNumField, nameField, primBusField, addField, provField;
     Business receivedBusinessInfo;
     private MyApplicationData state; //added
 
-
+    /**
+     * This method will save data entered in the business creation UI and save it in the database as a business object
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +40,11 @@ public class DetailViewActivity extends Activity {
         }
     }
 
-    public void updateBusiness(View v){
-        //TODO: Update contact funcionality
+    /**
+     * This method will be called upon clicking the update business button within the data display UI
+      * It will update the database with any new information entered, to act as a replacement for the old data
+     */
+    public void updateBusiness(View v) {
 
         receivedBusinessInfo.businessNumber = busNumField.getText().toString();
         receivedBusinessInfo.name = nameField.getText().toString();
@@ -51,6 +59,10 @@ public class DetailViewActivity extends Activity {
 
     }
 
+    /**
+     * This method will delete a selected business from the database
+     * This deletion will also negate its display in the list on the UI
+     */
     public void deleteBusiness(View v) {
         //TODO: Erase contact functionality
 

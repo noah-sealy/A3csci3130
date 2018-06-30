@@ -11,6 +11,11 @@ import android.widget.TextView;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.firebase.database.FirebaseDatabase;
 
+/**
+ * This is the main activity of the app, it will create the actual UI which will act as the opening display for the app
+ * The app uses a list view to display the names of the items saved on the data base, which can be selected individually for further analysis
+ * This code was originally provided by the professor by has been edited by Noah Sealy, B00726289 in order to fit the code in the context of a business creation
+ */
 public class MainActivity extends Activity {
 
 
